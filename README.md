@@ -13,7 +13,8 @@ This repository contains Java programming exercises and examples created as part
 | Folder | Description |
 |--------|-------------|
 | `Laborator1/` | Laboratory 1 — exercises on static methods and OOP class design |
-| `LeksionSeminar1/` | Lecture/Seminar 1 — introductory exercises (placeholder) |
+| `Laborator2/` | Laboratory 2 — Java Swing GUI exercises (JFrame, dialogs, login) |
+| `LeksionSeminar1/` | Lecture/Seminar 1 — static methods: temperature, parity, factorial |
 | `LeksionSeminar2/` | Lecture/Seminar 2 — Java GUI programming with AWT and Swing |
 
 ## How to Compile and Run
