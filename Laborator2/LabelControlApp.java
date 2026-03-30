@@ -5,23 +5,21 @@ import java.awt.event.*;
  * Ushtrimi 4 — Kontrolli i Label-it
  *
  * Detyrë:
- * - Butoni "Fshi"   → fshin tekstin e label-it
- * - Butoni "Rifillo" → rikthen tekstin origjinal të label-it
+ * - Label me tekstin fillestar "Teksti fillestar"
+ * - Butoni "Fshi"    → fshin tekstin e label-it (bëhet bosh)
+ * - Butoni "Rifillo" → shfaq tekstin "Teksti u rikthye"
  *
  * Shpjegim:
  * - JLabel ruan tekstin e tij; setText("") e fshin.
- * - Teksti origjinal ruhet në konstantën TEKST_ORIGJINAL dhe
- *   butoni "Rifillo" e rikthen atë me setText().
+ * - Butoni "Rifillo" vendos tekstin "Teksti u rikthye" me setText().
  * - Dy ActionListener të ndryshëm i trajtojnë butonat individualë.
  */
 public class LabelControlApp {
 
-    private static final String TEKST_ORIGJINAL = "Mirë se vini në sistemin tonë!";
-
     public static void main(String[] args) {
         JFrame frame = new JFrame("Kontrolli i Label-it");
 
-        JLabel lbl = new JLabel(TEKST_ORIGJINAL, SwingConstants.CENTER);
+        JLabel lbl = new JLabel("Teksti fillestar", SwingConstants.CENTER);
         lbl.setBounds(20, 40, 360, 30);
 
         JButton btnFshi    = new JButton("Fshi");
@@ -49,7 +47,7 @@ public class LabelControlApp {
         btnRifillo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                lbl.setText(TEKST_ORIGJINAL);
+                lbl.setText("Teksti u rikthye");
             }
         });
     }
