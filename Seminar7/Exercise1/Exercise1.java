@@ -6,7 +6,7 @@ import java.awt.event.*;
  *
  * Shpjegim i klasës MouseEvent dhe ndërfaqeve listener:
  *
- * MouseEvent është një klasë event që gjenerohет kur përdoruesi ndërvepron me
+ * MouseEvent është një klasë event që gjenerohet kur përdoruesi ndërvepron me
  * miun (shtypje, lëshim, klikim, lëvizje, hyrje/dalje). Objekti MouseEvent mban
  * koordinatat (X, Y) të cursorit si dhe butonin e shtypur.
  *

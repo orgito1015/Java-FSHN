@@ -66,6 +66,7 @@ public class Exercise5 extends Frame implements ItemListener {
     class DrawPanel extends Panel {
         private static final int SQUARES  = 20;
         private static final int SQ_SIZE  = 40;
+        private static final long SEED_MULTIPLIER = 1000L;
         private final Random rnd = new Random();
 
         @Override
@@ -78,7 +79,7 @@ public class Exercise5 extends Frame implements ItemListener {
             Color c    = getSelectedColor();
             boolean fill = filledCheck.getState();
 
-            rnd.setSeed(colorChoice.getSelectedIndex() * 1000L + (fill ? 1 : 0));
+            rnd.setSeed(colorChoice.getSelectedIndex() * SEED_MULTIPLIER + (fill ? 1 : 0));
 
             for (int i = 0; i < SQUARES; i++) {
                 int x = rnd.nextInt(w);
